@@ -1,0 +1,11 @@
+Generating SQLite file soa_vs_aos/reports/8388608_soa_timing.sqlite from soa_vs_aos/reports/8388608_soa_timing.nsys-rep
+Processing [soa_vs_aos/reports/8388608_soa_timing.sqlite] with [/usr/local/cuda-13.2/NsightSystems-cli-2026.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+-----------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns) | Med (ns) | Min (ns) | Max (ns) | StdDev (ns) |               Name                |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+-----------------------------------+
+|    100.0 |         4465390 |        20 | 223269.5 | 225578.0 |   178716 |   227610 |     10524.7 | update_soa(float *, float *, int) |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+-----------------------------------+
+

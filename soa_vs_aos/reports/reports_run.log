@@ -1,0 +1,44 @@
+soa: PASS (8388608 records, 20 launches)
+Collecting data...
+Generating '/tmp/nsys-root/nsys-report-937d.qdstrm'
+[1/1] [0%                          ] 8388608_soa_timing.nsys-rep[1/1] [0%                          ] 8388608_soa_timing.nsys-rep[1/1] [9%                          ] 8388608_soa_timing.nsys-rep[1/1] [==18%                       ] 8388608_soa_timing.nsys-rep[1/1] [==19%                       ] 8388608_soa_timing.nsys-rep[1/1] [==21%                       ] 8388608_soa_timing.nsys-rep[1/1] [===23%                      ] 8388608_soa_timing.nsys-rep[1/1] [====25%                     ] 8388608_soa_timing.nsys-rep[1/1] [=============58%            ] 8388608_soa_timing.nsys-rep[1/1] [==============61%           ] 8388608_soa_timing.nsys-rep[1/1] [========================100%] 8388608_soa_timing.nsys-rep[1/1] [========================100%] 8388608_soa_timing.nsys-rep
+Generated:
+	/workspace/soa_vs_aos/reports/8388608_soa_timing.nsys-rep
+Generating SQLite file soa_vs_aos/reports/8388608_soa_timing.sqlite from soa_vs_aos/reports/8388608_soa_timing.nsys-rep
+Processing [soa_vs_aos/reports/8388608_soa_timing.sqlite] with [/usr/local/cuda-13.2/NsightSystems-cli-2026.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+-----------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns) | Med (ns) | Min (ns) | Max (ns) | StdDev (ns) |               Name                |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+-----------------------------------+
+|    100.0 |         4465390 |        20 | 223269.5 | 225578.0 |   178716 |   227610 |     10524.7 | update_soa(float *, float *, int) |
++----------+-----------------+-----------+----------+----------+----------+----------+-------------+-----------------------------------+
+
+==PROF== Connected to process 214 (/workspace/soa_vs_aos/build/update)
+==PROF== Profiling "update_soa" - 0: 0%....50%....100% - 40 passes
+soa: PASS (8388608 records, 1 launches)
+==PROF== Disconnected from process 214
+==PROF== Report: /workspace/soa_vs_aos/reports/8388608_soa.ncu-rep
+aos: PASS (8388608 records, 20 launches)
+Collecting data...
+Generating '/tmp/nsys-root/nsys-report-6708.qdstrm'
+[1/1] [0%                          ] 8388608_aos_timing.nsys-rep[1/1] [0%                          ] 8388608_aos_timing.nsys-rep[1/1] [10%                         ] 8388608_aos_timing.nsys-rep[1/1] [==18%                       ] 8388608_aos_timing.nsys-rep[1/1] [==21%                       ] 8388608_aos_timing.nsys-rep[1/1] [===23%                      ] 8388608_aos_timing.nsys-rep[1/1] [===24%                      ] 8388608_aos_timing.nsys-rep[1/1] [====25%                     ] 8388608_aos_timing.nsys-rep[1/1] [=============58%            ] 8388608_aos_timing.nsys-rep[1/1] [==============61%           ] 8388608_aos_timing.nsys-rep[1/1] [========================100%] 8388608_aos_timing.nsys-rep[1/1] [========================100%] 8388608_aos_timing.nsys-rep
+Generated:
+	/workspace/soa_vs_aos/reports/8388608_aos_timing.nsys-rep
+Generating SQLite file soa_vs_aos/reports/8388608_aos_timing.sqlite from soa_vs_aos/reports/8388608_aos_timing.nsys-rep
+Processing [soa_vs_aos/reports/8388608_aos_timing.sqlite] with [/usr/local/cuda-13.2/NsightSystems-cli-2026.2.1/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+---------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns)  | Med (ns)  | Min (ns) | Max (ns) | StdDev (ns) |              Name               |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+---------------------------------+
+|    100.0 |        36216948 |        20 | 1810847.4 | 1811842.5 |  1785011 |  1821651 |      7617.3 | update_aos(Coefficients *, int) |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+---------------------------------+
+
+==PROF== Connected to process 396 (/workspace/soa_vs_aos/build/update)
+==PROF== Profiling "update_aos(Coefficients *, int)" - 0: 0%....50%....100% - 40 passes
+aos: PASS (8388608 records, 1 launches)
+==PROF== Disconnected from process 396
+==PROF== Report: /workspace/soa_vs_aos/reports/8388608_aos.ncu-rep
